@@ -146,7 +146,7 @@ The built-in test values come from the **Tymphany XLS-12** driver datasheet, whi
 
 ## Acknowledgments
 
-This project was inspired by and built upon the electroacoustic modeling work of **Janne Ahonen** (B.Sc. EE), who served as the mathematician and electroacoustic model engineer for [WinISD](http://www.linearteam.dk/?pageid=winisd). His generous and detailed correspondence explaining the equivalent circuit approach, LTSpice modeling techniques, and multi-driver parameter adjustments was foundational to this project.
+This project was inspired by and built upon the electroacoustic modeling work of **Janne Ahonen** (B.Sc. EE), who served as the mathematician and electroacoustic model engineer for [WinISD](https://www.linearteam.org/). His generous and detailed correspondence explaining the equivalent circuit approach, LTSpice modeling techniques, and multi-driver parameter adjustments was foundational to this project.
 
 **References:**
 - Janne Ahonen — WinISD electroacoustic model documentation and private correspondence (2021)
