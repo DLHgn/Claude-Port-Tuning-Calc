@@ -227,12 +227,14 @@ def _make_param_row(parent, label_text, row, default_unit, *extra_units,
     def set_value(text):
         if entry is None:
             return
-        state = entry.cget("state")
-        if state == "readonly":
-            entry.configure(state="normal")
+        # Always force "normal" state before editing, then restore.
+        # We use the `readonly` flag from when the field was created rather
+        # than trying to read the current state with cget(), because
+        # ttk.Entry.cget("state") behaves inconsistently across platforms.
+        entry.configure(state="normal")
         entry.delete(0, "end")
         entry.insert(0, str(text))
-        if state == "readonly":
+        if readonly:
             entry.configure(state="readonly")
 
     return {
